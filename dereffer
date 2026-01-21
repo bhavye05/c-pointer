@@ -1,0 +1,17 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int x = 25;        // Original variable
+    int* ptr = &x;     // Pointer storing address of x
+    int y;             // Third variable
+
+    // Copy value using dereferencing
+    y = *ptr;
+
+    cout << "Value of x: " << x << endl;
+    cout << "Value obtained using pointer: " << *ptr << endl;
+    cout << "Value of y (copied using dereferencing): " << y << endl;
+
+    return 0;
+}
