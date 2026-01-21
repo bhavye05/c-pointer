@@ -1,0 +1,20 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    // Create dynamic integer using new
+    int* ptr = new int;
+
+    // Modify value through pointer
+    *ptr = 42;
+
+    cout << "Value of dynamically allocated integer: " << *ptr << endl;
+
+    // Properly delete dynamic memory
+    delete ptr;
+
+    // Optional: avoid dangling pointer
+    ptr = nullptr;
+
+    return 0;
+}
